@@ -9,7 +9,7 @@
             <h3>Full-Stack Developer</h3>
             <h3>Marching Ants Marketing LLP</h3>
             <h4>Location - Bengaluru</h4>
-            <h5>MAY 2017 - DEC 2017</h5>
+            <h5>MAR 2017 - DEC 2017</h5>
         </div>
     </div>
     <div class="col-sm-6">
@@ -18,10 +18,10 @@
 
     <div class="col-sm-6 jobs">
         <div class="details">
-            <h3>Technical Lead Developer</h3>
+            <h3>Software Engineer</h3>
             <h3>Forever Networks Pvt Ltd</h3>
             <h4>Location - Bengaluru</h4>
-            <h5>MAY 2016 - MAY 2017</h5>
+            <h5>MAR 2016 - MAR 2017</h5>
         </div>
     </div>
     <div class="col-sm-6">

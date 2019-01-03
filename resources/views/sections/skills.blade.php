@@ -13,7 +13,5 @@
         <li class="s90"><span>PostgreSQL</span></li>
         <li class="s90"><span>jQuery</span></li>
         <li class="s70"><span>Java</span></li>
-        <li class="s60"><span>C</span></li>
-        <li class="s60"><span>C++</span></li>
     </ul>
 </div>
