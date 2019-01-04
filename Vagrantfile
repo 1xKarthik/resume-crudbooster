@@ -1,35 +1,49 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-private_key_path = File.join(Dir.home, ".ssh", "id_rsa")
-public_key_path = File.join(Dir.home, ".ssh", "id_rsa.pub")
-insecure_key_path = File.join(Dir.home, ".vagrant.d", "insecure_private_key")
+require 'json'
+require 'yaml'
 
-private_key = IO.read(private_key_path)
-public_key = IO.read(public_key_path)
+VAGRANTFILE_API_VERSION ||= "2"
+confDir = $confDir ||= File.expand_path("vendor/laravel/homestead", File.dirname(__FILE__))
 
-Vagrant.configure("2") do |config|
-  
-  config.vm.box = "ubuntu/trusty64"
-  config.ssh.forward_agent    = true
-  # config.vm.provision 'file',
-  #   source: public_key_path,
-  #   destination: '~/.ssh/me.pub'
+homesteadYamlPath = File.expand_path("Homestead.yaml", File.dirname(__FILE__))
+homesteadJsonPath = File.expand_path("Homestead.json", File.dirname(__FILE__))
+afterScriptPath = "after.sh"
+customizationScriptPath = "user-customizations.sh"
+aliasesPath = "aliases"
 
-  config.ssh.insert_key = false
-  config.ssh.private_key_path = [
-    private_key_path,
-    insecure_key_path # to provision the first time
-  ]
+require File.expand_path(confDir + '/scripts/homestead.rb')
 
-  config.vm.provision :shell, privileged: false, :inline => <<-SCRIPT
-    set -e
+Vagrant.require_version '>= 1.9.0'
 
-    echo '#{private_key}' > /home/vagrant/.ssh/id_rsa
-    chmod 600 /home/vagrant/.ssh/id_rsa
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    if File.exist? aliasesPath then
+        config.vm.provision "file", source: aliasesPath, destination: "/tmp/bash_aliases"
+        config.vm.provision "shell" do |s|
+            s.inline = "awk '{ sub(\"\r$\", \"\"); print }' /tmp/bash_aliases > /home/vagrant/.bash_aliases"
+        end
+    end
 
-    echo '#{public_key}' > /home/vagrant/.ssh/authorized_keys
-    chmod 600 /home/vagrant/.ssh/authorized_keys
-  SCRIPT
+    if File.exist? homesteadYamlPath then
+        settings = YAML::load(File.read(homesteadYamlPath))
+    elsif File.exist? homesteadJsonPath then
+        settings = JSON.parse(File.read(homesteadJsonPath))
+    else
+        abort "Homestead settings file not found in " + File.dirname(__FILE__)
+    end
 
+    Homestead.configure(config, settings)
+
+    if File.exist? afterScriptPath then
+        config.vm.provision "shell", path: afterScriptPath, privileged: false, keep_color: true
+    end
+
+    if File.exist? customizationScriptPath then
+        config.vm.provision "shell", path: customizationScriptPath, privileged: false, keep_color: true
+    end
+
+    if defined? VagrantPlugins::HostsUpdater
+        config.hostsupdater.aliases = settings['sites'].map { |site| site['map'] }
+    end
 end
