@@ -9,7 +9,7 @@
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>Laravel, PHP, MariaDB, Bootstrap, Semantic UI, VueJs, jQuery, Webpack</span>
+                    <span>Laravel, PHP, MariaDB, Bootstrap, Semantic UI, VueJS, jQuery, Webpack</span>
                 </li>
                 <li class="desc">
                     <span class="sub">Modules: </span>
@@ -43,7 +43,7 @@
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>AngularJs, Bootstrap, JavaScript, jQuery</span>
+                    <span>AngularJS, Bootstrap, JavaScript, jQuery</span>
                 </li>
                 <li class="desc">
                     <span>Designed and Developed public website for Highgates Hotel.</span>
@@ -57,7 +57,7 @@
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>AngularJs, WordPress, jQuery, Bootstrap.</span>
+                    <span>AngularJS, WordPress, jQuery, Bootstrap.</span>
                 </li>
                 <li class="desc">
                       <span>One of the biggest sites I ever worked on. Worked with a team to convert static website into Dynamic
@@ -73,10 +73,10 @@ wherever necessary and fixed numerous bugs.</span>
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>AngularJs, Bootstrap, JavaScript, jQuery.</span>
+                    <span>AngularJS, Bootstrap, JavaScript, jQuery.</span>
                 </li>
                 <li class="desc">
-                    <span>Converted the static website into AngularJs version.</span>
+                    <span>Converted the static website into AngularJS version.</span>
                 </li>
             </ul>
         </li>
@@ -155,7 +155,7 @@ and website speed.</span>
                role="button">Link</a>
             <ul class="description">
                 <li class="desc">
-                    <span>AngularJs bug fixes, Search, Alignment Issues</span>
+                    <span>AngularJS bug fixes, Search, Alignment Issues</span>
                 </li>
             </ul>
         </li>

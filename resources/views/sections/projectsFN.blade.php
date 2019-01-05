@@ -9,7 +9,7 @@
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>AngularJs, Bootstrap, JavaScript, LESS, Gulp, Bower.</span>
+                    <span>AngularJS, Bootstrap, JavaScript, LESS, Gulp, Bower.</span>
                 </li>
                 <li class="desc">
                     <span>This module handles all the administrative tasks of the institute.</span>
@@ -21,7 +21,7 @@
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>AngularJs, Bootstrap, JavaScript, LESS, Gulp, Bower</span>
+                    <span>AngularJS, Bootstrap, JavaScript, LESS, Gulp, Bower</span>
                 </li>
                 <li class="desc">
                     <span>This module contains student, parent and teacher’s sub-modules and has its own features</span>
@@ -45,7 +45,7 @@
             <ul class="description">
                 <li class="desc">
                     <span class="sub">Technologies: </span>
-                    <span>AngularJs, Bootstrap, JavaScript, LESS, Gulp, Bower</span>
+                    <span>AngularJS, Bootstrap, JavaScript, LESS, Gulp, Bower</span>
                 </li>
                 <li class="desc">
                     <span>This module handles student assessment tasks - competitive tests, score statistics, question papers.</span>

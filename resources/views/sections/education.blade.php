@@ -16,7 +16,7 @@
 
     <div class="col-sm-6 schools">
         <div class="details">
-            <h3>Sri Chaitanya Institution, Tirupati, AP</h3>
+            <h3>Sri Chaitanya Junior College, Tirupati, AP</h3>
             <h4>Higher Secondary - PCM</h4>
             <h5>2009 - 2010</h5>
         </div>
@@ -27,7 +27,7 @@
 
     <div class="col-sm-6 schools">
         <div class="details">
-            <h3>PriyaDarshini VidyaMandir, AP</h3>
+            <h3>Priyadarshini Vidya Mandir, AP</h3>
             <h4>Primary - PCM</h4>
             <h5>2008</h5>
         </div>

@@ -16,4 +16,4 @@
         //]]>
     </script>
 @endif
-<div id="copyright" class="w-100 text-center">Copyright © 2018 Karthik Girraju</div>
+<div id="copyright" class="w-100 text-center">Copyright © 2019 Karthik Girraju</div>
