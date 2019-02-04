@@ -9,7 +9,14 @@
 <div class="container">
 
     <div id="wrapper">
-        @yield('content')
+        @php
+        if(DB::connection()->getDatabaseName())
+        {
+        echo "Connected to database ".DB::connection()->getDatabaseName();
+        }
+        $response->send();
+        @endphp
+        {{-- @yield('content') --}}
     </div>
 
     <footer class="row">
