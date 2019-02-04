@@ -30,7 +30,6 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Name","name"=>"about_id","join"=>"about,full_name"];
 			$this->col[] = ["label"=>"Intro Content","name"=>"content"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
