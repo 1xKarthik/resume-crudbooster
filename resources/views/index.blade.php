@@ -9,6 +9,6 @@
     @include('sections.projectsFN')
     @include('sections.relevantExperience')
     @include('sections.ITSkills')
-    @include('sections.personal')
+    {{-- @include('sections.personal') --}}
     @include('sections.academicProjects')
 @endsection
