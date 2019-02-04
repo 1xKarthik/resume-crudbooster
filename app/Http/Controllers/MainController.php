@@ -9,7 +9,7 @@
 		
 		function index() {
 			$about = About::whereNull( 'deleted_at' )->get()->first();
-			$intro = IntroContent::whereNull( 'deleted_at' )->where('about_id', $about->id)->orderBy( 'id', 'DESC' )->get()->all();
+			$intro = IntroContent::whereNull( 'deleted_at' )->orderBy( 'id', 'DESC' )->get()->all();
 			
 			
 			return view( 'index' )->with( 'about', $about )->with( 'intro', $intro );

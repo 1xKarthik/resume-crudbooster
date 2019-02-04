@@ -21,7 +21,6 @@ class IntroContentTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'content' => 'Good page layout and design skills, multitasking and handling projects from concept to final deliverable.',
-                'about_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
@@ -30,7 +29,6 @@ class IntroContentTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'content' => 'Proficient in all aspects of Front-End and Back-End development.',
-                'about_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
@@ -39,7 +37,6 @@ class IntroContentTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'content' => 'Graduated Master of Science in Software Engineering from Vellore Institute of Technology, Tamil Nadu.',
-                'about_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
                 'deleted_at' => NULL,
