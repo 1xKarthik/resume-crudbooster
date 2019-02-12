@@ -1,12 +1,12 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-{{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125746776-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125746776-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-125746776-1');
-</script>--}}
+</script>
 
 @if (getenv('APP_ENV') === 'local')
     <script id="__bs_script__">

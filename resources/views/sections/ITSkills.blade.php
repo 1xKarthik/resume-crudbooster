@@ -10,8 +10,7 @@
         <li><strong>VCS: </strong>GitHub, Bitbucket, SVN</li>
         <li><strong>Operating System: </strong>Linux, Windows, Mac</li>
         <li><strong>Software: </strong>JIRA, IntelliJ IDE, Source tree, GitHub, Skype, Eclipse IDE, MS Office,
-            Visual
-            Studio
+            Visual Studio
         </li>
     </ul>
 </div>
