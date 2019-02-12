@@ -21,7 +21,7 @@ deploy:
   bucket_name: elasticbeanstalk-ap-south-1-577683050298
   bucker_path: resume-docker
   on:
-    branch: multi-docker-containers
+    branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
     secure: $AWS_SECRET_KEY
